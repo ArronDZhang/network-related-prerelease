@@ -38,3 +38,9 @@ $python Main.py --data-name Subgraph_Data
 to get the AUC
 
 As for embedding-baesd algorithm, take deepwalk as an example, you need to process the data.mat follow the steps mentioned before(train_test_split -> use training data to learning the embeddings of each node -> link prediction evaluation)
+
+For the implementation of LINE and Node2vec, you can refer to:
+https://github.com/shenweichen/GraphEmbedding
+
+For the implementation of VGAE, you can refer to:
+https://github.com/zfjsail/gae-pytorch
