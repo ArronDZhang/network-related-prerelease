@@ -24,3 +24,17 @@ $ python link_prediction_pre.py
 
 to get the link prediction performance of deepwalk on eight data sets.
 In our report, we run it for 10 time to get the estimated mean value and std. of AUC.
+
+
+To run baseline algorithms on HUAWEI's data, 
+for SEAL, you can refer to 
+
+https://github.com/muhanzhang/SEAL/tree/master/Python
+
+just add the data(of .mat form) into the data folder of SEAL and use
+
+$python Main.py --data-name Subgraph_Data
+
+to get the AUC
+
+As for embedding-baesd algorithm, take deepwalk as an example, you need to process the data.mat follow the steps mentioned before(train_test_split -> use training data to learning the embeddings of each node -> link prediction evaluation)
