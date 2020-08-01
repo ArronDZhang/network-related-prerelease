@@ -99,7 +99,7 @@ def link_prediction(dataset):
     pred = clf.predict_proba(test_x)[:,1]
     return roc_auc_score(test_y, pred)
 
-data_lst = ['Subgraph Data']
+data_lst = ['Subgraph_Data']
 if __name__=='__main__':
     with open('result.txt','a') as file:
         for i in range(len(data_lst)):
